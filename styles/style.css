@@ -17,7 +17,7 @@
     display: grid;
 }
 .primary-color{
-    background-color: #412567;
+    background-color: #1a0b2e
 }
 .secondary-color{
     background-color: #230E3D;
@@ -27,6 +27,11 @@
 }
 .secondary-font{
     color: #e606c0;
+}
+.para-font{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 400;
 }
 .hidden{
     display: none;
@@ -39,8 +44,10 @@ nav{
     width: 100%;
     max-width: 1600px;
     height: 92px;
+    margin: 0 auto;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 nav ul{
     gap: 32px;
@@ -73,6 +80,7 @@ nav li a{
 .banner{
     width: 100%;
     max-width: 1600px;
+    margin: 0 auto;
     height: 760px;
     background: url("../assets/hero-bg.png");
     background-repeat: no-repeat;
@@ -109,9 +117,6 @@ nav li a{
     margin-bottom: 8px;
 }
 .banner-text{
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
-    font-weight: 400;
     margin-bottom: 24px;
 }
 .btn-container{
@@ -134,6 +139,40 @@ nav li a{
     gap: 8px;
 }
 
+/* about-section */
+.about{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px 120px 200px 120px;
+    text-align: center;
+}
+.about-info{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.689);
+}
+.about-info h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+#distant-para{
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+.about-spec{
+    margin-top: 80px;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 80px;
+}
+.spec-quantity{
+    margin-bottom: 16px;
+    color: #00ff88;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
 
 
 /* small-device-styles */
@@ -151,9 +190,79 @@ nav li a{
         display: inline;
         cursor: pointer;
     }
+    /* banner-section */
+    .banner {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    .banner-image{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 24px;
+        background-size: contain;
+    }
+    .banner-image img {
+        width: 30%;
+    }
+    .badge {
+        font-size: 1rem;
+        padding: 8px 16px;
+        top: 11%;
+        right: 30%;
+    }
+    .btn-container {
+        width: 100%;
+    }
+    .btn-container button{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    #spotify-button,
+    #message-btn{
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    /* about-section */
+    .about{
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .about-info h1{
+        font-size: 2rem;
+    }
+    #distant-para{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .about-spec{
+        width: 100%;
+        margin-top: 40px;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    .spec-quantity{
+        font-size: 2.5rem;
+    }
 }
 
 /* Medium-device-styles */
 @media screen and (min-width:577px) and (max-width:992px){
-
+    .badge{
+        top:15%;
+        right: 35%;
+    }
+    .about-spec{
+        width: 100%;
+        margin-top: 40px;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    .spec-quantity{
+        font-size: 2.5rem;
+    }
 }
