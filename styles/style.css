@@ -71,5 +71,22 @@ nav li a{
 
 
 /* small-device-styles */
+@media screen and (max-width:576px){
+    /* navbar-styles */
+    nav{
+        padding: 16px 20px;
+        height: 60px;
+        justify-content: space-between;
+    }
+    nav ul li, button{
+        display: none;
+    }
+    .hamburger{
+        display: inline;
+    }
+}
 
 /* Medium-device-styles */
+@media screen and (min-width:577px) and (max-width:992px){
+
+}
