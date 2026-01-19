@@ -69,6 +69,7 @@ nav li a:hover{
     font-size: 2.3rem;
     font-weight: 700;
     cursor: pointer;
+    animation: float 4s ease-in-out infinite;
 }
 .gradient-btn{
     padding: 12px 16px;
@@ -112,20 +113,6 @@ nav li a:hover{
 }
 .banner-image:hover{
     animation: rotate 3s linear 0.3s;
-}
-@keyframes rotate {
-    0%{
-        transform: scale(1.1) rotate(90deg);
-    }
-    25%{
-        transform: scale(0.9) rotate(180deg);
-    }
-    75%{
-        transform: scale(1.1) rotate(270deg);
-    }
-    100%{
-        transform: scale(0.9) rotate(360deg);
-    }
 }
 .badge{
     padding: 8px 16px;
@@ -837,5 +824,32 @@ footer ul a{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+}
+
+/* animations */
+@keyframes rotate{
+    0%{
+        transform: scale(1.1) rotate(90deg);
+    }
+    25%{
+        transform: scale(0.9) rotate(180deg);
+    }
+    75%{
+        transform: scale(1.1) rotate(270deg);
+    }
+    100%{
+        transform: scale(0.9) rotate(360deg);
+    }
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    1000%{
+        transform: translateY(0);
     }
 }
