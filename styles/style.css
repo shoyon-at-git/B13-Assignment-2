@@ -25,6 +25,9 @@
 }
 .secondary-font{
     color: #e606c0;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .para-font{
     color: rgba(255, 255, 255, 0.8);
@@ -57,6 +60,10 @@ nav li a{
     color: white;
     font-size: 1rem;
     font-weight: 500;
+    transition: color 1s ease 0.1s;
+}
+nav li a:hover{
+    color: chartreuse;
 }
 .brand-name{
     font-size: 2.3rem;
@@ -350,6 +357,7 @@ footer{
 footer h1{
     font-size: 3rem;
     font-weight: 700;
+    cursor: pointer;
 }
 footer ul{
     /* border: 1px solid white; */
