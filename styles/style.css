@@ -261,6 +261,50 @@ nav li a{
     gap: 5px;
     color: #00ff88;
 }
+/* host-section */
+.host{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px 200px;
+    padding-top: 0;
+    text-align: center;
+}
+.host h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.host-container{
+    /* border: 1px solid white; */
+    padding: 40px;
+    gap: 24px;
+    border-radius: 40px;
+    text-align: left;
+    align-items: center;
+}
+.host-text{
+    flex-direction: column;
+    gap: 16px;
+}
+.host-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.social{
+    list-style: none;
+    /* max-width: 184px;
+    height: 40px; */
+    gap: 8px;
+}
+.social .logo-box{
+    border: 1px solid #533c72;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* small-device-styles */
@@ -402,6 +446,32 @@ nav li a{
         font-size: 1.25rem;
         font-weight: 700;
         margin-bottom: 8px;
+    }
+    /* host-section */
+    .host{
+        padding: 40px 10px;
+        padding-top: 0;
+        text-align: center;
+    }
+    .host h1{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .host-container{
+        padding: 24px;
+        gap: 24px;
+        text-align: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .host-text{
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    .host-title{
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 }
 
