@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
-
 /* shared-styles */
 .flex{
     display: flex;
@@ -36,7 +34,6 @@
 .hidden{
     display: none;
 }
-
 /* individual-styles */
 /* navbar-style */
 nav{
@@ -74,8 +71,13 @@ nav li a{
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     border: none;
     cursor: pointer;
+    transition: background 4s ease-in 1s;
 }
-
+.gradient-btn:hover{
+    /* font-size: 1.15rem; */
+    color: yellow;
+    background: linear-gradient(180deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+}
 /* banner-section-styles */
 .banner{
     width: 100%;
@@ -99,6 +101,24 @@ nav li a{
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    cursor: pointer;
+}
+.banner-image:hover{
+    animation: rotate 3s linear 0.3s;
+}
+@keyframes rotate {
+    0%{
+        transform: scale(1.1) rotate(90deg);
+    }
+    25%{
+        transform: scale(0.9) rotate(180deg);
+    }
+    75%{
+        transform: scale(1.1) rotate(270deg);
+    }
+    100%{
+        transform: scale(0.9) rotate(360deg);
+    }
 }
 .badge{
     padding: 8px 16px;
@@ -137,8 +157,12 @@ nav li a{
     font-weight: 600;
     cursor: pointer;
     gap: 8px;
+    transition: background-color 1s ease-in 0.1s;
 }
-
+#message-btn:hover{
+    background-color: crimson;
+    border: none;
+}
 /* about-section */
 .about{
     width: 100%;
@@ -193,11 +217,12 @@ nav li a{
     border-radius: 40px;
     background: rgba(53, 17, 101, 0.4);
     justify-content: center;
-    align-items: center;
+    align-content: center;
     padding: 40px;
 }
 #reason1{
     grid-row: 1 / 3;
+    align-content: center;
 }
 #reason2{
     grid-column: 2 / 5;
