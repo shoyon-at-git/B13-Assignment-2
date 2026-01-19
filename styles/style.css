@@ -577,32 +577,77 @@ footer ul a{
     .spec-quantity{
         font-size: 2.5rem;
     }
+    /* why-choose-section */
     .why-choose{
-        padding: 0px;
+        padding: 40px 20px;
+    }
+    .why-choose h2{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 16px;
     }
     .reason-container{
         width: 100%;
-        padding: 10px;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,1fr);
         row-gap: 16px;
+        text-align: left;
+    }
+    .box{
+        padding: 24px;
+    }
+    
+    .box>img{
+        height: 60px;
+        width: 60px;
+        margin-bottom: 16px;
+    }
+    .box>h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 16px;
     }
     #reason1,
-    #reason2,#reason3,#reason4{
-        grid-row: auto;
+    #reason2,
+    #reason3,
+    #reason4 {
         grid-column: auto;
+        grid-row: auto;
+    }
+    /* featured-section */
+    .featured{
+        padding: 40px 20px;
+    }
+    .featured h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 24px;
     }
     .episode-container{
         width: 100%;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    .episode-box iframe{
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        width: 400px;
+        height: 400px;
+        
     }
     .episode-box .episode-text{
         max-width: 400px;
         padding: 16px;
     }
+    .episode-box h1{
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
     /* host-section */
     .host{
-        padding: 30px 10px;
+        padding: 40px 10px;
         padding-top: 0;
         text-align: center;
     }
