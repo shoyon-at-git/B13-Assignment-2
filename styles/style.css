@@ -509,24 +509,22 @@ footer ul a{
         max-width: 1600px;
         margin: 0 auto;
         padding: 40px 20px;
-        background-size: cover;
+        background-size: 100%;
+        background-position: center;
     }
     .footer-container{
         gap: 24px;
     }
     footer h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
     }
     footer ul{
-        /* border: 1px solid white; */
-        list-style: none;
-        gap: 40px;
+        max-width: 255px;
+        gap: 16px;
         justify-content: center;
         align-items: center;
-    }
-    footer ul a{
-        text-decoration: none;
+        flex-wrap: wrap;
     }
 }
 
@@ -569,5 +567,197 @@ footer ul a{
         max-width: 400px;
         padding: 16px;
     }
-    
+    /* host-section */
+    .host{
+        padding: 30px 10px;
+        padding-top: 0;
+        text-align: center;
+    }
+    .host h1{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .host-container{
+        padding: 24px;
+        gap: 24px;
+        text-align: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .host-text{
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    .host-title{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    /* footer-section */
+    footer{
+        padding: 40px 20px;
+        background-size: 100%;
+        background-position: center;
+    }
+    .footer-container{
+        gap: 24px;
+    }
+    footer h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    footer ul{
+        max-width: 255px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* large-device-styles */
+@media screen and (min-width:992px) and (max-width:1200px){
+    .badge{
+        top:15%;
+        right: 35%;
+    }
+    .about-spec{
+        width: 100%;
+        margin-top: 40px;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    .spec-quantity{
+        font-size: 2.5rem;
+    }
+    .why-choose{
+        padding: 20px;
+    }
+    .reason-container{
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 16px;
+    }
+    #reason1,
+    #reason2,#reason3,#reason4{
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .episode-container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .episode-box .episode-text{
+        max-width: 400px;
+        padding: 16px;
+    }
+    /* host-section */
+    .host{
+        padding: 40px 10px;
+        padding-top: 0;
+        text-align: center;
+    }
+    .host-container{
+        padding: 24px;
+        gap: 24px;
+        text-align: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .host-text{
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    /* footer-section */
+    footer{
+        width: 100%;
+        padding: 40px 20px;
+        background-size: 100%;
+        background-position: center;
+    }
+    .footer-container{
+        gap: 24px;
+    }
+    footer ul{
+        max-width: 255px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* extra-large-device-styles */
+@media screen and (min-width:1201px) and (max-width:1450px){
+    .badge{
+        top:15%;
+        right: 35%;
+    }
+    .about-spec{
+        width: 100%;
+        margin-top: 30px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .spec-quantity{
+        font-size: 2.5rem;
+    }
+    .why-choose{
+        padding: 0px;
+    }
+    .reason-container{
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 16px;
+    }
+    #reason1,
+    #reason2,#reason3,#reason4{
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .episode-container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .episode-box .episode-text{
+        max-width: 400px;
+        padding: 16px;
+    }
+    /* host-section */
+    .host{
+        padding: 40px 10px;
+        padding-top: 0;
+        text-align: center;
+    }
+    .host-container{
+        padding: 24px;
+        gap: 16px;
+    }
+    .host-text{
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+    /* footer-section */
+    footer{
+        width: 100%;
+        padding: 40px 20px;
+        background-size: 100%;
+        background-position: center;
+    }
+    .footer-container{
+        gap: 24px;
+    }
+    footer ul{
+        max-width: 255px;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
