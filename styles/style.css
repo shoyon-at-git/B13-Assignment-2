@@ -391,8 +391,8 @@ footer ul a{
     .badge {
         font-size: 1rem;
         padding: 8px 16px;
-        top: 11%;
-        right: 30%;
+        top: 9%;
+        right: 25%;
     }
     .btn-container {
         width: 100%;
@@ -760,7 +760,7 @@ footer ul a{
 @media screen and (min-width:1201px) and (max-width:1450px){
     .badge{
         top:15%;
-        right: 35%;
+        right: 40%;
     }
     .about-spec{
         width: 100%;
